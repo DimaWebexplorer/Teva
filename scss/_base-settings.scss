@@ -1,0 +1,31 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url(../fonts/Segoe\ UI.ttf);
+    font-weight: 400;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: map-get($colors, main-background);
+    color: map-get($colors, black);
+    font-size: 1.6rem;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+.main-container {
+    width: 181.4rem;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 96%;
+
+}

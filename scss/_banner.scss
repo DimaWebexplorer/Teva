@@ -1,0 +1,17 @@
+.banner {
+    margin-bottom: .2rem;
+
+    &__image {
+        border-radius: 5.4rem;
+        width: 100%;
+        @include respond(laptop) {
+            border-radius: 4.8rem;
+        }
+        @include respond(tablet) {
+            border-radius: 3.6rem;
+        }
+        @include respond(phone) {
+            border-radius: 2.4rem;
+        }
+    }
+}

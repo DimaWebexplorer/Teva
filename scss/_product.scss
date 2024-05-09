@@ -1,0 +1,43 @@
+.product {
+    background: map-get($colors, white);
+    padding: 14.8rem 0 5.6rem;
+    border-radius: 5.4rem;
+    margin-bottom: .2rem;
+    @include respond(laptop) {
+        border-radius: 4.8rem;
+        padding: 13.2rem 0 4.8rem;
+    }
+    @include respond(tablet) {
+        border-radius: 3.6rem;
+        padding: 12.4rem 0 3.2rem;
+    }
+    @include respond(phone) {
+        border-radius: 2.4rem;
+        padding: 7.2rem 0 2.4rem;
+    }
+
+    &__text-content {
+        margin-bottom: 3.6rem;
+        @include respond(laptop) {
+            margin-bottom: 3.2rem;
+        }
+        @include respond(phone) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &__features {
+        padding: 3.5rem 0 0;
+        border-top: solid .1rem map-get($colors, grey-background);
+        display: flex;
+        justify-content: space-between;
+        @include respond(laptop) {
+            padding: 3.1rem 0 0;
+        }
+        @include respond(phone) {
+            padding: 3.5rem 0 0;
+            flex-direction: column;
+            gap: 3.2rem 0;
+        }
+    }
+}

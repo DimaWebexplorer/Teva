@@ -1,0 +1,10 @@
+.solutions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2rem;
+    justify-content: center;
+    margin-bottom: .2rem;
+    @include respond(phone) {
+        display: block;
+    }
+}

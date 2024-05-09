@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Teva</title>
+    <link type="image/x-icon" href="icons/favicon.svg" rel="shortcut icon">
+</head>
+<body>
+    <header class="header">
+        <div class="main-container header__main-container">
+            <div class="header__logo-hamburger">
+                <img class="header__logo" src="icons/TEVA.svg" alt="logo">
+                <img class="header__hamburger" src="icons/hamburger.svg" alt="hamburger">
+                <img class="header__hamburger-close" src="icons/hamburgerClose.svg" alt="hamburgerClose">
+            </div>
+            <nav class="header__nav-menu">
+                <ul class="header__nav-menu-list">
+                    <li class="header__nav-menu-list-item">Product</li>
+                    <li class="header__nav-menu-list-item">Solutions</li>
+                    <li class="header__nav-menu-list-item">Customers</li>
+                    
+                    <li class="header__nav-menu-list-item header__nav-menu-list-item_btn">Get started</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="modal-window">
+        <div class="modal-window__container">
+            <form class="form" action="#">
+                <div class="form__header">
+                    <h3 class="form__title">Log in</h3>
+                    <img class="form__exit" src="icons/hamburgerClose.svg" alt="exit">
+                </div>
+                <h4 class="form__subtitle">Log in via E-mail:</h4>
+                <div class="form__input-line">
+                    <div class="form__input-group">
+                        <input class="form__input form__input_email" type="email" placeholder="E-mail" id="email">
+                        <label class="form__label" for="#email">E-mail</label>
+                    </div>
+                </div>
+                <div class="form__input-line">
+                    <div class="form__input-group">
+                        <input class="form__input form__input_password" type="password" placeholder="Password" id="password">
+                        <label class="form__label" for="#password">Password</label>
+                    </div>
+                    <a class="form__input-switch" href="#"></a>
+                </div>
+                <div class="form__button-text">
+                    <button class="form__button-text-btn">Enter</button>
+                    <p class="form__button-text-description">Forgot your password</p>
+                </div>
+                <hr class="form__hr">
+                <p class="form__bottom-text">Don't have an account <span class="form__bottom-text-span">Sign in</span></p>
+            </form>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="main-container hero__main-container">
+            <div class="hero__content">
+                <div class="text-content">
+                    <h2 class="text-content__title">Pay bills, get paid and
+                        manage cash flow</h2>
+                    <p class="text-content__description">Teva combines accounts payable, receivable and cash flow management <br class="text-content__br">
+                        with working capital, helping save businesses time and money.</p>
+                    <button class="btn">
+                        <p class="btn__text">Get started</p>
+                        <img class="btn__arrow" src="icons/Arrow.svg" alt="arrow">
+                    </button>
+                </div>
+                <div class="investors">
+                    <h3 class="investors__title">Backed by the same investors as</h3>
+                    <div class="investors__icons">
+                        <img class="investors__icons-item" src="icons/stripe.svg" alt="stripe">
+                        <img class="investors__icons-item" src="icons/paypal.svg" alt="paypal">
+                        <img class="investors__icons-item" src="icons/robinhood.svg" alt="robinhood">
+                        <img class="investors__icons-item" src="icons/klarna.svg" alt="klarna">
+                        <img class="investors__icons-item" src="icons/cashapp.svg" alt="cashapp">
+                        <img class="investors__icons-item" src="icons/checkout.svg" alt="checkout">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <img class="banner__image"
+        srcset="img/banner-image390w.png 390w,
+                img/banner-image1024w.png 1024w,
+                img/banner-image1440w.png 1440w,
+                img/banner-image.png 1920w"
+        src="img/banner-image.png"
+        alt="banner"
+        loading="lazy">
+    </section>
+
+    <section class="product">
+        <div class="main-container product__main-container">
+            <div class="text-content product__text-content">
+                <h2 class="text-content__title">Product</h2>
+                <p class="text-content__description text-content__description_mb0">Teva makes it easy for SMBs to pay suppliers, send invoices, get access
+                    to working capital and gain control over business cash flow in one place.</p>
+            </div>
+            <div class="product__features">
+                <div class="feature">
+                    <img class="feature__icon" src="icons/purple.svg" alt="purple">
+                    <div class="feature__text">
+                        <h3 class="feature__text-title">Accounts payable</h3>
+                        <p class="feature__text-description">Manage, pay and reconcile business bills</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img class="feature__icon" src="icons/orange.svg" alt="orange">
+                    <div class="feature__text">
+                        <h3 class="feature__text-title">Accounts receivable</h3>
+                        <p class="feature__text-description">Send invoices, set reminders and get paid</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img class="feature__icon" src="icons/yellow.svg" alt="yellow">
+                    <div class="feature__text">
+                        <h3 class="feature__text-title">Pay later</h3>
+                        <p class="feature__text-description">Sell first, pay suppliers 30 to 90 days later</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img class="feature__icon" src="icons/green.svg" alt="green">
+                    <div class="feature__text">
+                        <h3 class="feature__text-title">Get paid early</h3>
+                        <p class="feature__text-description">Unlock revenue tied up in your invoices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions">
+        <div class="solution">
+            <div class="solution__container">
+                <div class="solution__text">
+                    <h3 class="solution__text-title">Accounts payable</h3>
+                    <p class="solution__text-description">Manage, pay and reconcile all business bills</p>
+                </div>
+                <img class="solution__image" src="img/payable.png" alt="payable">
+            </div>
+        </div>
+        <div class="solution">
+            <div class="solution__container">
+                <div class="solution__text">
+                    <h3 class="solution__text-title">Accounts receivable</h3>
+                    <p class="solution__text-description">Send invoices, set reminders and get paid</p>
+                </div>
+                <img class="solution__image" src="img/receivable.png" alt="receivable">
+            </div>
+        </div>
+        <div class="solution">
+            <div class="solution__container">
+                <div class="solution__text">
+                    <h3 class="solution__text-title">Pay later</h3>
+                    <p class="solution__text-description">Sell first, pay suppliers 30 to 90 days later</p>
+                </div>
+                <img class="solution__image" src="img/payLater.png" alt="payLater">
+            </div>
+        </div>
+        <div class="solution">
+            <div class="solution__container">
+                <div class="solution__text">
+                    <h3 class="solution__text-title">Get paid early</h3>
+                    <p class="solution__text-description">Unlock revenue tied up in your invoices</p>
+                </div>
+                <img class="solution__image" src="img/getPaidEarly.png" alt="getPaidEarly">
+            </div>
+        </div>
+    </section>
+
+    <section class="customers">
+        <div class="main-container customers__main-container">
+            <div class="text-content">
+                <h2 class="text-content__title">Loved by our customers</h2>
+                <p class="text-content__description text-content__description_mb0">Worldwide customers continue to choose us because we help their businesses grow with excellent service and 24/7 support</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-customers">
+        <div class="our-customers__slider">
+            <img class="our-customers__slider-item" src="icons/stripeBig.svg" alt="stripeBig">
+            <img class="our-customers__slider-item" src="icons/paypalBig.svg" alt="paypalBig">
+            <img class="our-customers__slider-item" src="icons/robinhoodBig.svg" alt="robinhoodBig">
+            <img class="our-customers__slider-item" src="icons/klarnaBig.svg" alt="klarnaBig">
+            <img class="our-customers__slider-item" src="icons/cashappBig.svg" alt="cashappBig">
+            <img class="our-customers__slider-item" src="icons/checkoutBig.svg" alt="checkoutBig">
+
+            <img class="our-customers__slider-item" src="icons/stripeBig.svg" alt="stripeBig">
+            <img class="our-customers__slider-item" src="icons/paypalBig.svg" alt="paypalBig">
+            <img class="our-customers__slider-item" src="icons/robinhoodBig.svg" alt="robinhoodBig">
+            <img class="our-customers__slider-item" src="icons/klarnaBig.svg" alt="klarnaBig">
+            <img class="our-customers__slider-item" src="icons/cashappBig.svg" alt="cashappBig">
+            <img class="our-customers__slider-item" src="icons/checkoutBig.svg" alt="checkoutBig">
+            <img class="our-customers__slider-item" src="icons/stripeBig.svg" alt="stripeBig">
+            <img class="our-customers__slider-item" src="icons/paypalBig.svg" alt="paypalBig">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="main-container footer__main-container">
+            <img class="logo footer__logo" src="icons/TEVA_white.svg" alt="TEVA_white">
+            <ul class="footer__list">
+                <li class="footer__list-item">Product</li>
+                <li class="footer__list-item">Solutions</li>
+                <li class="footer__list-item">Customers</li>
+                <li class="footer__list-item footer__list-item_btn">Get started</li>
+            </ul>
+            <img class="footer__image"
+            srcset="img/footerImage294w.png 294w,
+                    img/footerImage443w.png 443w,
+                    img/footerImage680w.png 680w,
+                    img/footerImage.png 906w"
+            src="img/footerImage.png"
+            alt="footerImage"
+            loading="lazy">
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

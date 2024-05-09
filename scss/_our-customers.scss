@@ -1,0 +1,49 @@
+.our-customers {
+    background: map-get($colors, grey-card);
+    padding: 14.8rem 0 5.6rem;
+    border-radius: 5.4rem;
+    margin-bottom: .2rem;
+    overflow: hidden;
+    position: relative;
+    @include respond(laptop) {
+        border-radius: 4.8rem;
+        padding: 13.2rem 0 4.8rem;
+    }
+    @include respond(tablet) {
+        border-radius: 3.6rem;
+        padding: 12.4rem 0 3.2rem;
+    }
+    @include respond(tablet) {
+        border-radius: 2.4rem;
+        padding: 7.2rem 0 2.4rem;
+    }
+
+    &__slider {
+        display: flex;
+        gap: 2.4rem;
+
+        &-item {
+            flex-shrink: 0;
+            width: 26.7rem;
+            height: 26.7rem;
+            animation: ticker 6s linear infinite;
+            @include respond(laptop) {
+                width: 18.4rem;
+                height: 18.4rem;
+            }
+            @include respond(tablet) {
+                width: 12rem;
+                height: 12rem;
+            }
+        }
+    }
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateZ(0);
+    }
+    to {
+        transform: translate3d(-654%, 0, 0);
+    }
+}
